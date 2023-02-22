@@ -1,0 +1,32 @@
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+*.xccheckout
+*.xcscmblueprint
+xcuserdata/
+*.xcuserstate
+project.xcworkspace/
+DerivedData/
+build/
+*.ipa
+*.xcarchive
+*.idea/
+*.xcscheme
+*.lock
+
+# Config
+**/Config.xcconfig
+
+# macOS
+# https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Package Manager
+# https://github.com/github/gitignore/blob/master/Swift.gitignore
+.build/
+*.swiftpm
