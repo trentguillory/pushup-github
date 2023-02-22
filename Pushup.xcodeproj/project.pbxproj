@@ -19,11 +19,13 @@
 		84B49CD529A64F1C0055AEEC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CD429A64F1C0055AEEC /* HomeView.swift */; };
 		84B49CD729A64F250055AEEC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CD629A64F250055AEEC /* HomeViewModel.swift */; };
 		84B49CD929A650EB0055AEEC /* AppViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CD829A650EB0055AEEC /* AppViewState.swift */; };
-		84B49CE129A682BE0055AEEC /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CE029A682BE0055AEEC /* HomeViewState.swift */; };
+		84B49CE129A682BE0055AEEC /* HomeViewRepoListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CE029A682BE0055AEEC /* HomeViewRepoListLoadingState.swift */; };
 		84B49CE429A683F90055AEEC /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CE329A683F90055AEEC /* RepoListView.swift */; };
 		84B49CE629A684300055AEEC /* RepoListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CE529A684300055AEEC /* RepoListViewCell.swift */; };
 		84B49CE829A689440055AEEC /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49CE729A689440055AEEC /* RepositoryModel.swift */; };
 		84F5681729A68D2C00BF57C5 /* OctoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84F5681629A68D2C00BF57C5 /* OctoKit */; };
+		84F5681B29A69F1900BF57C5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5681A29A69F1900BF57C5 /* ProfileHeaderView.swift */; };
+		84F5681D29A69F2A00BF57C5 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5681C29A69F2A00BF57C5 /* ProfileHeaderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +43,12 @@
 		84B49CD429A64F1C0055AEEC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		84B49CD629A64F250055AEEC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		84B49CD829A650EB0055AEEC /* AppViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewState.swift; sourceTree = "<group>"; };
-		84B49CE029A682BE0055AEEC /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
+		84B49CE029A682BE0055AEEC /* HomeViewRepoListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRepoListLoadingState.swift; sourceTree = "<group>"; };
 		84B49CE329A683F90055AEEC /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
 		84B49CE529A684300055AEEC /* RepoListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewCell.swift; sourceTree = "<group>"; };
 		84B49CE729A689440055AEEC /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		84F5681A29A69F1900BF57C5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		84F5681C29A69F2A00BF57C5 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,7 @@
 				84B49CE229A683E90055AEEC /* Subviews */,
 				84B49CD429A64F1C0055AEEC /* HomeView.swift */,
 				84B49CD629A64F250055AEEC /* HomeViewModel.swift */,
-				84B49CE029A682BE0055AEEC /* HomeViewState.swift */,
+				84B49CE029A682BE0055AEEC /* HomeViewRepoListLoadingState.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -132,11 +136,29 @@
 		84B49CE229A683E90055AEEC /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				84F5681929A69F0400BF57C5 /* ProfileHeader */,
+				84F5681829A69EF900BF57C5 /* RepoList */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		84F5681829A69EF900BF57C5 /* RepoList */ = {
+			isa = PBXGroup;
+			children = (
 				84B49CE329A683F90055AEEC /* RepoListView.swift */,
 				84B49CE529A684300055AEEC /* RepoListViewCell.swift */,
 				84B49CE729A689440055AEEC /* RepositoryModel.swift */,
 			);
-			path = Subviews;
+			path = RepoList;
+			sourceTree = "<group>";
+		};
+		84F5681929A69F0400BF57C5 /* ProfileHeader */ = {
+			isa = PBXGroup;
+			children = (
+				84F5681A29A69F1900BF57C5 /* ProfileHeaderView.swift */,
+				84F5681C29A69F2A00BF57C5 /* ProfileHeaderViewModel.swift */,
+			);
+			path = ProfileHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,14 +243,16 @@
 				84685F4529A639AA0023B3AF /* NetworkConfiguration.swift in Sources */,
 				84B49CD729A64F250055AEEC /* HomeViewModel.swift in Sources */,
 				84B49CD929A650EB0055AEEC /* AppViewState.swift in Sources */,
+				84F5681D29A69F2A00BF57C5 /* ProfileHeaderViewModel.swift in Sources */,
 				84685F2A29A62A730023B3AF /* PushupApp.swift in Sources */,
 				84685F4929A64CFD0023B3AF /* NetworkError.swift in Sources */,
 				84B49CE429A683F90055AEEC /* RepoListView.swift in Sources */,
 				84685F3E29A636410023B3AF /* AppViewModel.swift in Sources */,
 				84685F4129A637FE0023B3AF /* NetworkClient.swift in Sources */,
 				84B49CE829A689440055AEEC /* RepositoryModel.swift in Sources */,
+				84F5681B29A69F1900BF57C5 /* ProfileHeaderView.swift in Sources */,
 				84B49CE629A684300055AEEC /* RepoListViewCell.swift in Sources */,
-				84B49CE129A682BE0055AEEC /* HomeViewState.swift in Sources */,
+				84B49CE129A682BE0055AEEC /* HomeViewRepoListLoadingState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,6 @@ struct AppView: View {
             case .loading: ProgressView()
             }
         }
-        .padding()
         .onOpenURL(perform: { url in
             viewModel.didReceiveGithubRedirect(url)
         })

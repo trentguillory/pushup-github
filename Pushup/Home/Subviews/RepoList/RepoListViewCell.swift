@@ -7,7 +7,7 @@ struct RepoListViewCell: View {
     let repository: RepositoryModel
 
     var body: some View {
-        VStack {
+        VStack(spacing: 8) {
             HStack {
                 Image(systemName: "book.closed")
                 Text(repository.name)
